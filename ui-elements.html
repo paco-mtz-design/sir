@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <style type="text/CSS">
+
+      body {
+        background-color: #DDE0F8;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1 fr);
+        grid-template-rows: 50px 350px 50px;
+        background-color: white;
+      }
+
+      header {
+        grid-column: span 12;
+      }
+
+      aside {
+        grid-column: span 4;
+      }
+
+      main {
+        grid-column: span 8;
+      }
+
+      footer {
+        grid-column: span 12;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header>Header goes here</header>
+      <main>Main content goes here</main>
+      <aside>This is a small footer</aside>
+      <footer>Footer goes here</footer>
+    </div>
+
+  </body>
+
+</html>
