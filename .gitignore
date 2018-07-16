@@ -1,0 +1,10 @@
+# ide and os files
+.idea/
+*.DS_Store
+*.kate-swp
+*.desktop
+*.thumb
+*.sublime*
+.~*
+~*
+*~
