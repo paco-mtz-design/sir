@@ -12,26 +12,24 @@
       }
 
       .container {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: -40px;
         display: grid;
-        grid-template-columns: repeat(12, 1 fr);
-        grid-template-rows: 50px 350px 50px;
-        background-color: white;
+        grid-template-columns: auto 375px;
+        grid-template-rows: auto;
+        grid-gap: 20px;
       }
 
       header {
-        grid-column: span 12;
+        background-color: #616372;
+        height: 100px;
       }
 
-      aside {
-        grid-column: span 4;
-      }
-
-      main {
-        grid-column: span 8;
-      }
-
-      footer {
-        grid-column: span 12;
+      aside, main {
+        background-color: white;
+        padding: 20px;
       }
 
     </style>
@@ -40,11 +38,71 @@
 
   <body>
 
+    <header>Header goes here</header>
+
     <div class="container">
-      <header>Header goes here</header>
-      <main>Main content goes here</main>
-      <aside>This is a small footer</aside>
-      <footer>Footer goes here</footer>
+      <main>
+        <h4>Nueva reservación</h4>
+        <form class="" action="" method="">
+          <fieldset>
+            <legend>Información del cliente</legend>
+            <p>
+              <label for="reservation-name">Reservación a nombre de:
+                <input type="input" name="reservation-name" id="reservation-name" value="" placeholder="e.g. Alejandro Sherwell">
+              </label>
+            </p>
+            <p>
+              <label for="reservation-name">Teléfono para confirmar conservación:
+                <input type="input" name="reservation-tel" id="reservation-tel" value="" placeholder="81 0000 0000">
+              </label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Tipo de mesa</legend>
+            <p>
+              <img src="assets/tables-diagram.png" alt="tables diagram">
+            </p>
+            <p>
+              <label class="hidelabel">Escenario azul (min $10,000)
+                <input type="radio" checked="checked" name="table-type" value="Escenario azul (min $10,000)">
+              </label>
+              <label class="hidelabel">Sillón rosa ($9,000)
+                <input type="radio" name="table-type" value="Sillón rosa ($9,000)">
+              </label>
+              <label class="hidelabel">Sillón verde ($7,000)
+                <input type="radio" name="table-type" value="Sillón verde ($7,000)">
+              </label>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>Detalles de la reservación</legend>
+            <p>
+              <label for="reservation-size">Personas en la reservación:
+                <input type="number" name="reservation-size" min="1" max="15">
+              </label>
+            </p>
+            <p>
+              <label for="reservation-date-time">Fecha y horario de reservacion:
+                <input type="datetime-local" name="reservation-date-time">
+              </label>
+            </p>
+            <p>
+              <label for="reservation-bd">Es cumpleaños?
+                <input type="checkbox" name="reservation-bd">
+              </label>
+            </p>
+            <p>
+              <label for="reservation-comments">Comentarios sobre la reservacion:
+                <input type="text" name="reservation-comments">
+              </label>
+            </p>
+          </fieldset>
+        </form>
+      </main>
+
+      <aside>
+        <h4>Promociones<h4>
+      </aside>
     </div>
 
   </body>
