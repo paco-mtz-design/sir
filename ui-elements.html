@@ -14,7 +14,7 @@
         font-family: 'Work Sans', sans-serif;
       }
 
-      .container {
+      .main-layout {
         width: 90%;
         margin: 0 auto;
         position: relative;
@@ -25,9 +25,19 @@
         grid-gap: 20px;
       }
 
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 40px; 
+      }
+
       header {
-        background-color: #616372;
         height: 100px;
+        height: 330px;
+        background: linear-gradient(rgba(12, 18, 108, 0.6), rgba(12, 18, 108, 0.6), transparent), url("assets/bg-cover-casa-morelos.png") no-repeat center;
+        background-size: cover;
+        color: white;
       }
 
       aside, main {
@@ -41,9 +51,14 @@
 
   <body>
 
-    <header>Header goes here</header>
+    <header>
+      <div class="container">
+        <p>RP: Paco Martínez para</p>
+        <h2>Casa Morelos</h2>
+      </div>
+    </header>
 
-    <div class="container">
+    <div class="main-layout">
       <main>
         <h4>Nueva reservación</h4>
         <form class="" action="" method="">
@@ -88,8 +103,13 @@
               </label>
             </p>
             <p>
-              <label for="reservation-date-time">Fecha y horario de reservacion:
-                <input type="datetime-local" name="reservation-date-time">
+              <label for="reservation-date">Fecha y horario de reservacion:
+                <input type="date" name="reservation-date">
+              </label>
+            </p>
+            <p>
+              <label for="reservation-time">Fecha y horario de reservacion:
+                <input type="time" name="reservation-time">
               </label>
             </p>
             <p>
