@@ -1,5 +1,49 @@
 /* Form elements */
 
+/* Regular inputs */
+
+label {
+  display: block;
+}
+
+input[type="input"],
+input[type="number"],
+input[type="datetime-local"],
+input[type="text"] {
+  border: 2px solid #DDE0F8;
+  border-radius: 3px;
+  padding: 12px;
+  margin-top: 8px; /*to separate from label*/
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  caret-color: #0B27FB;
+  color: #111433;
+}
+
+input[type="input"]:active,
+input[type="number"]:active,
+input[type="datetime-local"]:active,
+input[type="text"]:active {
+  border: 2px solid #0B27FB;
+}
+
+input[type="input"]:focus,
+input[type="number"]:focus,
+input[type="datetime-local"]:focus,
+input[type="text"]:focus {
+  border: 2px solid #0B27FB;
+}
+
+input[type="input"]::placeholder,
+input[type="number"]::placeholder,
+input[type="datetime-local"]::placeholder,
+input[type="text"]::placeholder {
+  color: #BEBEBE;
+}
+
+/* Radio buttons */
+
 label.hidelabel {
   padding-left: 30px;
   margin-bottom: 10px;
