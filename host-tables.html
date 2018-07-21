@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
+    <link href="styles/forms.css" rel="stylesheet" type="text/css">
+    <link href="styles/type.css" rel="stylesheet" type="text/css">
+    <style type="text/CSS">
+
+      body {
+        background-color: #DDE0F8;
+      }
+
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 40px;
+      }
+
+      header {
+        height: 100px;
+        height: 330px;
+        background: linear-gradient(rgba(12, 18, 108, 0.6), rgba(12, 18, 108, 0.6), transparent), url("assets/bg-cover-casa-morelos.png") no-repeat center;
+        background-size: cover;
+        color: white;
+      }
+
+      aside, main {
+        background-color: white;
+        padding: 20px;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <p>Reservaciones para el Sábado 14 de Junio, 2018</p>
+        <h2>Sábado 14 en Casa Morelos</h2>
+
+        <div class="reservation-search-form">
+          <form class="reservation_search" id="reservation_search" action="/reservations/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+            <label for="q_clients_name_or_clients_cellphone_cont">Buscar Reservacion:</label>
+            <input onchange="this.form.submit();" type="search" name="q[clients_name_or_clients_cellphone_cont]" id="q_clients_name_or_clients_cellphone_cont">
+            <input type="submit" name="commit" value="Buscar" data-disable-with="Buscar">
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <main>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Celular</th>
+              <th scope="col">Cumpleaños</th>
+              <th scope="col">Comentarios</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Entro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Justina Miller</th>
+              <td>+985-32-7661888</td>
+              <td>true</td>
+              <td>Repudiandae aut atque aliquip et labore velit veniam dolores ipsum repudiandae architecto qui</td>
+              <td>2018-07-21 00:00:00 -0500</td>
+              <td>
+                <form class="edit_reservation" id="edit_reservation_28" action="/reservations/28/add_attendees" accept-charset="UTF-8" method="post">
+                  <input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="put">
+                  <input type="hidden" name="authenticity_token" value="Ptkiose11XQeAqyaJjfRtf98OePKr7zr0dNFxzS8xCD+M26mZreKNYhC/fcp+HyE46CeKlhK7k2v0Ex+A0TpSA==">
+                  <p>Hombres: <input min="0" type="number" value="0" name="reservation[m_attendees]" id="reservation_m_attendees"></p>
+                  <p>Mujeres: <input min="0" type="number" value="0" name="reservation[f_attendees]" id="reservation_f_attendees"></p>
+                  <input type="submit" name="commit" value="Guardar entrada" data-disable-with="Guardar entrada">
+                </form>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </main>
+    </div>
+
+  </body>
+
+</html>
