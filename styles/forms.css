@@ -65,6 +65,29 @@ input[type="text"]::placeholder {
   color: #BEBEBE;
 }
 
+/* Search Bar */
+
+input[type="search"] {
+  height: 46px;
+  background-color: white;
+  color: #BEBEBE;
+  border-radius: 30px;
+  border: none;
+  margin-top: 8px;
+  box-sizing: border-box;
+  caret-color: #0B27FB;
+}
+
+input[type="submit"] {
+  height: 46px;
+  background-color: #0B27FB;
+  color: #white;
+  border-radius: 30px;
+  border: none;
+  margin-top: 8px;
+}
+
+
 /* Radio buttons */
 
 label.hidelabel {
