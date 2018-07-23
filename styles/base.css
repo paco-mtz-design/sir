@@ -11,6 +11,8 @@ body {
   top: -40px;
   display: grid;
   grid-template-columns: auto 375px;
+  grid-template-areas:
+    "guest-form guest-form-specials";
   grid-template-rows: auto;
   grid-gap: 20px;
 }
@@ -44,3 +46,9 @@ main.guest-form,
 aside.guest-form-specials {
   background-color: white;
 }
+
+main.guest-form {
+  grid-area: guest-form;
+}
+aside.guest-form-specials {
+  grid-area: guest-form-specials;
