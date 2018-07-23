@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
+    <link href="styles/forms.css" rel="stylesheet" type="text/css">
+    <link href="styles/type.css" rel="stylesheet" type="text/css">
+    <link href="styles/tables.css" rel="stylesheet" type="text/css">
+    <style type="text/CSS">
+
+      body {
+        background-color: #F3F3F8;
+      }
+
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 40px;
+      }
+
+      .modal-container {
+        margin: 30px auto;
+        position: relative;
+        padding:20px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 3px;
+      }
+
+      .modal-container hr {
+        color: #DDE0F8;
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #DDE0F8;
+        padding: 0;
+        margin: 30px 0;
+      }
+
+      ul.reservation-details {
+        list-style: none;
+        -webkit-margin-before: 0;
+        -webkit-padding-start: 0;
+        -webkit-margin-after: 0;
+      }
+
+      .modal-container small,
+      ul.reservation-details small {
+        color: #616372;
+      }
+
+      ul.reservation-details p {
+        font-weight: 500;
+        margin-top: auto;
+      }
+
+      .woman-counter,
+      .man-counter {
+        display: flex;
+        align-items: center;
+      }
+
+      .woman-counter p,
+      .man-counter p {
+        width: 50%;
+      }
+
+      .woman-counter input,
+      .man-counter input {
+      }
+
+      .counter-submit {
+        text-align: right;
+      }
+
+      .bottom-action {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        margin-top: -40px;
+        margin-bottom: 40px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .bottom-action a {
+        color: white;
+        width: 100%;
+        padding: 20px;
+        text-decoration: none;
+        background-color: #111433;
+        border-radius: 0 0 3px 3px;
+      }
+
+      .bottom-action a:hover {
+        background-color: #0B27FB;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="modal-container">
+        <ul class="reservation-details">
+          <li><small>A nombre de:</small><p>Francisco Martínez</p></li>
+          <li><small>Horario:</small><p>11:00 PM</p></li>
+          <li><small>Es cumpleaños?</small><p>No</p></li>
+          <li><small>Invitados (acceso registrado / total)</small><p>6/10</p></li>
+        </ul>
+        <hr>
+        <small>Registrar acceso</small>
+        <div class="man-counter">
+          <p>Hombres</p>
+          <input type="number" name="reservation-man-counter" min="1" max="10" placeholder="1">
+        </div>
+        <div class="woman-counter">
+          <p>Mujeres</p>
+          <input type="number" name="reservation-woman-counter" min="1" max="10" placeholder="1">
+        </div>
+        <div class="counter-submit">
+          <input type="submit" name="save-counter" value="Guardar entrada">
+        </div>
+        <hr>
+        <ul class="reservation-details">
+          <li><small>Comentarios:</small><p>El invitado solicitó que se le recibiera con una botella de Moet, y adicionalmente dos botellas de Black Label con aguas minerales</p></li>
+          <li><small>Espacio reservado:</small><p>Sillón Verde</p></li>
+          <li><small>Teléfono referencia</small><p>+139-58-4731007</p></li>
+          <li><small>Reservación por:</small><p>Nombre de RP</p></li>
+        </ul>
+
+      </div>
+
+      <div class="bottom-action">
+        <a href="#">Cerrar</a>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

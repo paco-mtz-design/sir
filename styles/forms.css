@@ -81,10 +81,11 @@ input[type="search"] {
 input[type="submit"] {
   height: 46px;
   background-color: #0B27FB;
-  color: #white;
+  color: white;
   border-radius: 30px;
   border: none;
   margin-top: 8px;
+  padding: 0 15px;
 }
 
 
