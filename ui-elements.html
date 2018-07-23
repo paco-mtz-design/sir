@@ -5,51 +5,10 @@
     <title>Title of the document</title>
 
     <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/base.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
     <link href="styles/forms.css" rel="stylesheet" type="text/css">
     <link href="styles/type.css" rel="stylesheet" type="text/css">
-    <style type="text/CSS">
-
-      body {
-        background-color: #DDE0F8;
-      }
-
-      .main-layout {
-        width: 90%;
-        margin: 0 auto;
-        position: relative;
-        top: -40px;
-        display: grid;
-        grid-template-columns: auto 375px;
-        grid-template-rows: auto;
-        grid-gap: 20px;
-      }
-
-      .container {
-        width: 90%;
-        margin: 0 auto;
-        position: relative;
-        padding-top: 40px;
-      }
-
-      header {
-        height: 100px;
-        height: 330px;
-        background: linear-gradient(rgba(12, 18, 108, 0.6), rgba(12, 18, 108, 0.6), transparent), url("assets/bg-cover-casa-morelos.png") no-repeat center;
-        background-size: cover;
-        color: white;
-      }
-
-      aside, main {
-        background-color: white;
-        padding: 20px;
-      }
-
-      aside img {
-        width: 100%;
-      }
-
-    </style>
 
   </head>
 
@@ -63,7 +22,7 @@
     </header>
 
     <div class="main-layout">
-      <main>
+      <main class="guest-form">
         <h4>Nueva reservación</h4>
         <form class="" action="" method="">
           <fieldset>
@@ -130,7 +89,7 @@
         </form>
       </main>
 
-      <aside>
+      <aside class="guest-form-specials">
         <h4>Promociones<h4>
           <p>
             <img src="assets/todays-specials.jpeg" alt="todays specials">
