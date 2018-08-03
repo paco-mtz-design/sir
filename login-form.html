@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/base.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
+    <link href="styles/forms.css" rel="stylesheet" type="text/css">
+    <link href="styles/type.css" rel="stylesheet" type="text/css">
+    <link href="styles/media-queries.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body class="login-page">
+
+    <div class="login-body-bg"></div>
+
+    <div class="container">
+
+      <div class="login-form-container">
+
+        <h4>Welcome to S.I.R.</h4>
+        <h5>Sistema Inteligente de Reservaciones</h5>
+
+        <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="mdRsHvww9ve1n495jiPkToRhNaNXh6Tc3KZ2vxvYCR7KRM2eoFjjHdKH01/wjSaK6lSECXByi+buoHq0peBs+w==">
+
+          <div>
+            <label for="user_email">Email</label>
+            <input autofocus="autofocus" autocomplete="off" type="email" value="" name="user[email]" id="user_email">
+          </div>
+
+          <div>
+            <label for="user_password">Password</label>
+            <input autocomplete="off" type="password" name="user[password]" id="user_password">
+          </div>
+
+          <div>
+            <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+            <label class="inline-label" for="user_remember_me">Remember me</label>
+          </div>
+
+          <div>
+            <input type="submit" class="green" name="commit" value="Entrar" data-disable-with="Entrar">
+          </div>
+        </form>
+
+
+        <a href="/users/password/new">Forgot your password?</a><br>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
