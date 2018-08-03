@@ -1,0 +1,105 @@
+/* Host tables */
+
+.reservation-search-form {
+}
+
+.reservation_search {
+  width: 100%;
+  overflow: auto;
+}
+
+.search_form_input {
+  width: 70%;
+  margin-right: 10px;
+  padding: 0px 20px;
+  float: left;
+}
+
+.search_form_submit {
+  width: 20%;
+  margin-left: 10px;
+  float: right;
+}
+
+/* Host tables modal */
+
+.modal-container {
+  margin: 30px auto;
+  position: relative;
+  padding:20px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.modal-container hr {
+  color: #DDE0F8;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #DDE0F8;
+  padding: 0;
+  margin: 30px 0;
+}
+
+ul.reservation-details {
+  list-style: none;
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0;
+  -webkit-margin-after: 0;
+}
+
+.modal-container small,
+ul.reservation-details small {
+  color: #616372;
+}
+
+ul.reservation-details p {
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.woman-counter,
+.man-counter {
+  display: flex;
+  align-items: center;
+}
+
+.woman-counter p,
+.man-counter p {
+  width: 50%;
+}
+
+.woman-counter input,
+.man-counter input {
+}
+
+.counter-submit {
+  text-align: right;
+}
+
+.bottom-action {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: -40px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bottom-action a {
+  color: white;
+  width: 100%;
+  padding: 20px;
+  text-decoration: none;
+  background-color: #111433;
+  border-radius: 0 0 3px 3px;
+}
+
+.bottom-action a:hover {
+  background-color: #0B27FB;
+}

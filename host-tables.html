@@ -5,57 +5,13 @@
     <title>Title of the document</title>
 
     <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/base.css" rel="stylesheet" type="text/css">
+    <link href="styles/host-tables.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
     <link href="styles/forms.css" rel="stylesheet" type="text/css">
     <link href="styles/type.css" rel="stylesheet" type="text/css">
     <link href="styles/tables.css" rel="stylesheet" type="text/css">
-    <style type="text/CSS">
-
-      body {
-        background-color: #F3F3F8;
-      }
-
-      .container {
-        width: 90%;
-        margin: 0 auto;
-        position: relative;
-        padding-top: 40px;
-      }
-
-      header {
-        height: 100px;
-        height: 330px;
-        background: linear-gradient(rgba(12, 18, 108, 0.6), rgba(12, 18, 108, 0.6), transparent), url("assets/bg-cover-casa-morelos.png") no-repeat center;
-        background-size: cover;
-        color: white;
-      }
-
-      aside, main {
-        padding: 20px;
-      }
-
-      .reservation-search-form {
-      }
-
-      .reservation_search {
-        width: 100%;
-        overflow: auto;
-      }
-
-      .search_form_input {
-        width: 70%;
-        margin-right: 10px;
-        padding: 0px 20px;
-        float: left;
-      }
-
-      .search_form_submit {
-        width: 20%;
-        margin-left: 10px;
-        float: right;
-      }
-
-    </style>
+    <link href="styles/media-queries.css" rel="stylesheet" type="text/css">
 
   </head>
 
@@ -69,7 +25,7 @@
         <div class="reservation-search-form">
           <form class="reservation_search" id="reservation_search" action="/reservations/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
             <label for="q_clients_name_or_clients_cellphone_cont">Buscar Reservacion:</label>
-            <input class="search_form_input" onchange="this.form.submit();" type="search" name="q[clients_name_or_clients_cellphone_cont]" id="q_clients_name_or_clients_cellphone_cont">
+            <input class="search_form_input" onchange="this.form.submit();" type="search" name="q[clients_name_or_clients_cellphone_cont]" id="q_clients_name_or_clients_cellphone_cont" placeholder="Busca nombre o teléfono">
             <input class="search_form_submit" type="submit" name="commit" value="Buscar" data-disable-with="Buscar">
           </form>
         </div>

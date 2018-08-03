@@ -1,0 +1,88 @@
+/* Base styles */
+
+body {
+  background-color: #F3F3F8;
+}
+
+.main-layout {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+  display: grid;
+  grid-template-columns: auto 375px;
+  grid-template-areas:
+    "guest-form guest-form-specials";
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+}
+
+header {
+  height: 100px;
+  height: 330px;
+  background: linear-gradient(rgba(12, 18, 108, 0.6), rgba(12, 18, 108, 0.6)), url("../assets/bg-cover-casa-morelos.png") no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+aside, main {
+  padding: 20px;
+}
+
+aside img {
+  width: 100%;
+}
+
+/* Guest registration form */
+
+main.guest-form,
+aside.guest-form-specials {
+  background-color: white;
+}
+
+main.guest-form {
+  grid-area: guest-form;
+}
+aside.guest-form-specials {
+  grid-area: guest-form-specials;
+}
+
+/* Login Form */
+
+body.login-page {
+  color: white;
+  background-image: url("../assets/bg-login-form-2.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #240A6C;
+  height: 100vh;
+  width: 100%;
+}
+
+.login-body-bg {
+  background: linear-gradient(rgba(17, 20, 51, 0.6), rgba(9, 15, 78, 1)), no-repeat center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.login-form-container {
+  max-width: 330px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-form-container label {
+  text-align: left;
+}
+
+a {
+  color: inherit;
+}

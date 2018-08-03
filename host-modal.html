@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+
+    <link href="styles/base.css" rel="stylesheet" type="text/css">
+    <link href="styles/host-tables.css" rel="stylesheet" type="text/css">
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
+    <link href="styles/forms.css" rel="stylesheet" type="text/css">
+    <link href="styles/type.css" rel="stylesheet" type="text/css">
+    <link href="styles/tables.css" rel="stylesheet" type="text/css">
+    <link href="styles/media-queries.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="modal-container">
+        <ul class="reservation-details">
+          <li><small>A nombre de:</small><p>Francisco Martínez</p></li>
+          <li><small>Horario:</small><p>11:00 PM</p></li>
+          <li><small>Es cumpleaños?</small><p>No</p></li>
+          <li><small>Invitados (acceso registrado / total)</small><p>6/10</p></li>
+        </ul>
+        <hr>
+        <small>Registrar acceso</small>
+        <div class="man-counter">
+          <p>Hombres</p>
+          <input type="number" name="reservation-man-counter" min="1" max="10" placeholder="1">
+        </div>
+        <div class="woman-counter">
+          <p>Mujeres</p>
+          <input type="number" name="reservation-woman-counter" min="1" max="10" placeholder="1">
+        </div>
+        <div class="counter-submit">
+          <input type="submit" name="save-counter" value="Guardar entrada">
+        </div>
+        <hr>
+        <ul class="reservation-details">
+          <li><small>Comentarios:</small><p>El invitado solicitó que se le recibiera con una botella de Moet, y adicionalmente dos botellas de Black Label con aguas minerales</p></li>
+          <li><small>Espacio reservado:</small><p>Sillón Verde</p></li>
+          <li><small>Teléfono referencia</small><p>+139-58-4731007</p></li>
+          <li><small>Reservación por:</small><p>Nombre de RP</p></li>
+        </ul>
+
+      </div>
+
+      <div class="bottom-action">
+        <a href="#">Cerrar</a>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

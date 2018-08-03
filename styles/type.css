@@ -25,7 +25,7 @@ h3 { font-size: 22px;}
 h4, h5 { font-size: 18px;}
 
 /* Larger than phablet */
-@media (min-width: 600px) {
+@media (min-width: 620px) {
   h1 { font-size: 64px; }
   h2 { font-size: 48px; }
   h3 { font-size: 36px; }
@@ -33,6 +33,4 @@ h4, h5 { font-size: 18px;}
 	h5 { font-size: 22px; }
 }
 
-p {
-  margin-top: 0; }
 small {font-size: 14px;}
